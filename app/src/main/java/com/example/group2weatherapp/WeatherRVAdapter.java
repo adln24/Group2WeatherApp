@@ -35,6 +35,7 @@ public class WeatherRVAdapter extends RecyclerView.Adapter<WeatherRVAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull WeatherRVAdapter.ViewHolder holder, int position) {
+
         WeatherRVModal modal = weatherRVModalArrayList.get(position);
         holder.temperatureTV.setText(modal.getTemperature()+"°c");
         Picasso.get().load("http:".concat(modal.getIcon())).into(holder.conditionIV);

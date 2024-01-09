@@ -6,6 +6,7 @@ android {
     namespace = "com.example.group2weatherapp"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.group2weatherapp"
         minSdk = 16
